@@ -1,0 +1,10 @@
+@import '../styles.scss';
+
+body {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vh;
+  min-height: 100vh;
+}
