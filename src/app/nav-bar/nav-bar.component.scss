@@ -10,24 +10,27 @@
   display: flex;
   align-items: center;
 
-  .logo {
+  .left-nav-bar {
+    position: absolute;
+    left: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
     align-items: center;
 
-    .title {
-      width: $nav-bar-div-width;
-      height: $nav-bar-height;
+    padding-left: $nav-bar-padding;
 
-      padding-left: $nav-bar-div-padding;
-      padding-right: $nav-bar-div-padding;
+    .title {
+      width: $nav-bar-div-logo-width;
+      height: $nav-bar-height;
 
       display: flex;
       justify-content: center;
       align-items: center;
 
-      font-size: $nav-bar-font-size;
+      padding-right: $nav-bar-padding;
+
+      font-size: $nav-bar-logo-font-size;
       color: $text-black;
     }
 
@@ -52,8 +55,39 @@
       background-color: $profile-walfredo-color;
     }
   }
+
+  .right-nav-bar {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+
+    padding-right: $nav-bar-padding;
+
+    .language {
+      width: $nav-bar-div-width;
+      height: $nav-bar-height;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: $nav-bar-font-size;
+      color: $text-black;
+    }
+
+    .about {
+      width: $nav-bar-div-width;
+      height: $nav-bar-height;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: $nav-bar-font-size;
+      color: $text-black;
+    }
+  }
 }
-
-
-
-
