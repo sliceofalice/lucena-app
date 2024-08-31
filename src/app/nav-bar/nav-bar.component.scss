@@ -1,5 +1,59 @@
-.nav-bar{
-  width: 100%;
-  height: 8vh;
-  background-color: #333;
+@import '../../styles/colors.scss';
+@import '../../styles/fonts.scss';
+@import '../../styles/sizes.scss';
+
+.nav-bar {
+  width: $nav-bar-width;
+  height: $nav-bar-height;
+  background-color: $nav-bar-color;
+
+  display: flex;
+  align-items: center;
+
+  .logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+
+    .title {
+      width: $nav-bar-div-width;
+      height: $nav-bar-height;
+
+      padding-left: $nav-bar-div-padding;
+      padding-right: $nav-bar-div-padding;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: $nav-bar-font-size;
+      color: $text-black;
+    }
+
+    .profile-alice {
+      width: $nav-bar-div-profile-width;
+      height: $nav-bar-height;
+
+      background-color: $profile-alice-color;
+    }
+
+    .profile-ketlen {
+      width: $nav-bar-div-profile-width;
+      height: $nav-bar-height;
+
+      background-color: $profile-ketlen-color;
+    }
+
+    .profile-walfredo {
+      width: $nav-bar-div-profile-width;
+      height: $nav-bar-height;
+
+      background-color: $profile-walfredo-color;
+    }
+  }
 }
+
+
+
+

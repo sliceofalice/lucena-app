@@ -1,9 +1,17 @@
-$primary-background-color: #F2F0EF;
+@import './styles/colors.scss';
+@import './styles/fonts.scss';
 
-html {
-  margin: 0;
-  padding: 0;
-  background-color: $primary-background-color;
+* {
+  box-sizing: border-box;
 }
 
+html {
+  height: 100vh;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: $background-color;
+}
