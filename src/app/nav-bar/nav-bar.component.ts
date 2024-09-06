@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './nav-bar.component.html',
-  styleUrl: './nav-bar.component.scss'
+  styleUrls: ['./nav-bar-main.component.scss', './nav-bar-alternative.component.scss']
 })
 export class NavBarComponent {
   @Input() navBarType: string = 'nav-bar-main';
