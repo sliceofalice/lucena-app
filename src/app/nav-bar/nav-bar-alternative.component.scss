@@ -2,7 +2,7 @@
 @import '../../styles/fonts.scss';
 @import '../../styles/sizes.scss';
 
-.nav-bar {
+.nav-bar-alternative {
   width: $nav-bar-width;
   height: $nav-bar-height;
   background-color: $background-color;
@@ -45,3 +45,4 @@
     }
   }
 }
+

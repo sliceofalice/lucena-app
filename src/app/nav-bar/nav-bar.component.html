@@ -1,5 +1,7 @@
-<div class="nav-bar">
-  <div class="left-nav-bar">
+<div [class]="navBarType">
+  <div
+    class="left-nav-bar"
+    *ngIf="navBarType == 'nav-bar-main'">
     <div class="title poppins-bold">Lucena</div>
     <div class="profile-alice"></div>
     <div class="profile-ketlen"></div>
