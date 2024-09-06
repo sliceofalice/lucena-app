@@ -2,92 +2,99 @@
 @import '../../styles/fonts.scss';
 @import '../../styles/sizes.scss';
 
-.nav-bar {
+.nav-bar-main {
   width: $nav-bar-width;
   height: $nav-bar-height;
   background-color: $nav-bar-color;
 
   display: flex;
   align-items: center;
+}
 
-  .left-nav-bar {
-    position: absolute;
-    left: 0;
+.nav-bar-alternative {
+  width: $nav-bar-width;
+  height: $nav-bar-height;
+  background-color: $background-color;
+
+  display: flex;
+  align-items: center;
+}
+
+.left-nav-bar {
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+
+  .profile-alice {
+    width: $nav-bar-div-profile-width;
+    height: $nav-bar-height;
+
+    background-color: $profile-alice-color;
+  }
+
+  .profile-ketlen {
+    width: $nav-bar-div-profile-width;
+    height: $nav-bar-height;
+
+    background-color: $profile-ketlen-color;
+  }
+
+  .profile-walfredo {
+    width: $nav-bar-div-profile-width;
+    height: $nav-bar-height;
+
+    background-color: $profile-walfredo-color;
+  }
+
+  .title {
+    width: $nav-bar-div-logo-width;
+    height: $nav-bar-height;
+
     display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
 
     padding-left: $nav-bar-padding;
 
-    .title {
-      width: $nav-bar-div-logo-width;
-      height: $nav-bar-height;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      padding-right: $nav-bar-padding;
-
-      font-size: $nav-bar-logo-font-size;
-      color: $text-black;
-    }
-
-    .profile-alice {
-      width: $nav-bar-div-profile-width;
-      height: $nav-bar-height;
-
-      background-color: $profile-alice-color;
-    }
-
-    .profile-ketlen {
-      width: $nav-bar-div-profile-width;
-      height: $nav-bar-height;
-
-      background-color: $profile-ketlen-color;
-    }
-
-    .profile-walfredo {
-      width: $nav-bar-div-profile-width;
-      height: $nav-bar-height;
-
-      background-color: $profile-walfredo-color;
-    }
+    font-size: $nav-bar-logo-font-size;
+    color: $text-black;
   }
+}
 
-  .right-nav-bar {
-    position: absolute;
-    right: 0;
+.right-nav-bar {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  align-items: center;
+
+  padding-right: $nav-bar-padding;
+
+  .language {
+    width: $nav-bar-div-width;
+    height: $nav-bar-height;
+
     display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
 
-    padding-right: $nav-bar-padding;
+    font-size: $nav-bar-font-size;
+    color: $text-black;
+  }
 
-    .language {
-      width: $nav-bar-div-width;
-      height: $nav-bar-height;
+  .about {
+    width: $nav-bar-div-width;
+    height: $nav-bar-height;
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-      font-size: $nav-bar-font-size;
-      color: $text-black;
-    }
-
-    .about {
-      width: $nav-bar-div-width;
-      height: $nav-bar-height;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      font-size: $nav-bar-font-size;
-      color: $text-black;
-    }
+    font-size: $nav-bar-font-size;
+    color: $text-black;
   }
 }
