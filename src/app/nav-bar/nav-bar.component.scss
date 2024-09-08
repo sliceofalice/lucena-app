@@ -21,12 +21,17 @@
 }
 
 .left-nav-bar {
-  position: absolute;
+  position: fixed;
   left: 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  align-items: center;
+  flex-direction: row;
+  align-items: left;
+
+  .profiles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
   .profile-alice {
     width: $nav-bar-div-profile-width;
@@ -54,28 +59,29 @@
     height: $nav-bar-height;
 
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 
     padding-left: $nav-bar-padding;
 
     font-size: $nav-bar-logo-font-size;
     color: $text-black;
+
+    &:hover {
+      background-color: $options-bar-color;
+    }
   }
 }
 
 .right-nav-bar {
-  position: absolute;
-  right: 0;
+  position: fixed;
+  right: 0%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: right;
-  align-items: center;
-
-  padding-right: $nav-bar-padding;
+  flex-direction: row;
+  align-items: right;
 
   .language {
-    width: $nav-bar-div-width;
+    width: $nav-bar-div-language-width;
     height: $nav-bar-height;
 
     display: flex;
@@ -84,10 +90,15 @@
 
     font-size: $nav-bar-font-size;
     color: $text-black;
+
+    &:hover {
+      background-color: $options-bar-color;
+      font-weight: $nav-bar-font-weight-hover;
+    }
   }
 
   .about {
-    width: $nav-bar-div-width;
+    width: $nav-bar-div-about-width;
     height: $nav-bar-height;
 
     display: flex;
@@ -96,5 +107,10 @@
 
     font-size: $nav-bar-font-size;
     color: $text-black;
+
+    &:hover {
+      background-color: $options-bar-color;
+      font-weight: $nav-bar-font-weight-hover;
+    }
   }
 }
