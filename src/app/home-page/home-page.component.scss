@@ -1,0 +1,53 @@
+@import '../../styles/colors.scss';
+@import '../../styles/fonts.scss';
+@import '../../styles/sizes.scss';
+
+.title-subtitle {
+  margin-top: $home-page-margin-top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: $home-page-title-font-size;
+  color: $text-black;
+  text-align: center;
+}
+
+.subtitle {
+  width: $home-page-subtitle-width;
+  font-size: $home-page-subtitle-font-size;
+  color: $text-black;
+  text-align: center;
+  align-content: center;
+}
+
+.profiles {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+}
+
+.profile-alice {
+  width: $home-page-profile-width;
+  height: $home-page-profile-height;
+
+  background-color: $profile-alice-color;
+}
+
+.profile-ketlen {
+  width: $home-page-profile-width;
+  height: $home-page-profile-height;
+
+  background-color: $profile-ketlen-color;
+}
+
+.profile-walfredo {
+  width: $home-page-profile-width;
+  height: $home-page-profile-height;
+
+  background-color: $profile-walfredo-color;
+}
