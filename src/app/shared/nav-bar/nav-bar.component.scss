@@ -34,28 +34,28 @@
   }
 
   .profile-alice {
-    width: $nav-bar-div-profile-width;
+    width: $nav-bar-profile-width;
     height: $nav-bar-height;
 
     background-color: $profile-alice-color;
   }
 
   .profile-ketlen {
-    width: $nav-bar-div-profile-width;
+    width: $nav-bar-profile-width;
     height: $nav-bar-height;
 
     background-color: $profile-ketlen-color;
   }
 
   .profile-walfredo {
-    width: $nav-bar-div-profile-width;
+    width: $nav-bar-profile-width;
     height: $nav-bar-height;
 
     background-color: $profile-walfredo-color;
   }
 
   .title {
-    width: $nav-bar-div-logo-width;
+    width: $nav-bar-logo-width;
     height: $nav-bar-height;
 
     display: flex;
@@ -81,7 +81,7 @@
   align-items: right;
 
   .language {
-    width: $nav-bar-div-language-width;
+    width: $nav-bar-language-width;
     height: $nav-bar-height;
 
     display: flex;
@@ -98,7 +98,7 @@
   }
 
   .about {
-    width: $nav-bar-div-about-width;
+    width: $nav-bar-about-width;
     height: $nav-bar-height;
 
     display: flex;

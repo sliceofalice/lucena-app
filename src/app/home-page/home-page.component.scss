@@ -26,9 +26,10 @@
 
 .profiles {
   position: fixed;
+  bottom: 0;
   display: flex;
   flex-direction: row;
-  bottom: 0;
+  align-items: flex-end;
 }
 
 .profile-alice {
@@ -36,6 +37,10 @@
   height: $home-page-profile-height;
 
   background-color: $profile-alice-color;
+
+  &:hover {
+    height: $home-page-profile-height-hover;
+  }
 }
 
 .profile-ketlen {
@@ -43,6 +48,10 @@
   height: $home-page-profile-height;
 
   background-color: $profile-ketlen-color;
+
+  &:hover {
+    height: $home-page-profile-height-hover;
+  }
 }
 
 .profile-walfredo {
@@ -50,4 +59,8 @@
   height: $home-page-profile-height;
 
   background-color: $profile-walfredo-color;
+
+  &:hover {
+    height: $home-page-profile-height-hover;
+  }
 }
