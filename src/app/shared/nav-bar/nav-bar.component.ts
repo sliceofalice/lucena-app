@@ -10,7 +10,7 @@ export class NavBarComponent {
 
   constructor() { }
 
-  get navBarType() {
+  get navBarType() : string {
     return this.navBarAlternative ? 'nav-bar-alternative' : 'nav-bar-main';
   }
 }

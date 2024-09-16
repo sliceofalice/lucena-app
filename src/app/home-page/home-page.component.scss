@@ -31,36 +31,3 @@
   flex-direction: row;
   align-items: flex-end;
 }
-
-.profile-alice {
-  width: $home-page-profile-width;
-  height: $home-page-profile-height;
-
-  background-color: $profile-alice-color;
-
-  &:hover {
-    height: $home-page-profile-height-hover;
-  }
-}
-
-.profile-ketlen {
-  width: $home-page-profile-width;
-  height: $home-page-profile-height;
-
-  background-color: $profile-ketlen-color;
-
-  &:hover {
-    height: $home-page-profile-height-hover;
-  }
-}
-
-.profile-walfredo {
-  width: $home-page-profile-width;
-  height: $home-page-profile-height;
-
-  background-color: $profile-walfredo-color;
-
-  &:hover {
-    height: $home-page-profile-height-hover;
-  }
-}
