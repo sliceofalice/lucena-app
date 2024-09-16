@@ -1,0 +1,12 @@
+{
+  "app": {
+    "name": "Lucena",
+    "navBar": {
+      "about": "About",
+      "language": "Language"
+    },
+    "homePage": {
+      "subtitle": "A family working in STEAM to create a technological world"
+    }
+  }
+}

@@ -1,10 +1,17 @@
 <app-nav-bar [navBarAlternative]="true"></app-nav-bar>
 <div class="title-subtitle">
-  <span class="title poppins-bold">Lucena</span>
-  <span class="subtitle metrophobic-regular">A family working in STEAM to create a technological world</span>
+  <span
+    class="title poppins-bold"
+    [translate]="'app.name' | translate">
+  </span>
+  <span
+    class="subtitle metrophobic-regular"
+    [translate]="'app.homePage.subtitle' | translate">
+  </span>
 </div>
 <div class="profiles">
   <app-home-profile
     *ngFor="let profile of profiles"
-    [profile]="profile"></app-home-profile>
+    [profile]="profile">
+  </app-home-profile>
 </div>
