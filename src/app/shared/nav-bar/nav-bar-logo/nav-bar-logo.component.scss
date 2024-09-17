@@ -1,0 +1,20 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/fonts.scss';
+@import '../../../../styles/sizes.scss';
+
+.profile-default {
+  width: $nav-bar-profile-width;
+  height: $nav-bar-height;
+}
+
+.alice {
+  background-color: $profile-alice-color;
+}
+
+.ketlen {
+  background-color: $profile-ketlen-color;
+}
+
+.walfredo {
+  background-color: $profile-walfredo-color;
+}

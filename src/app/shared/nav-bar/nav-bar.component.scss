@@ -26,50 +26,29 @@
   display: flex;
   flex-direction: row;
   align-items: left;
+}
 
-  .profiles {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
+.profiles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
-  .profile-alice {
-    width: $nav-bar-profile-width;
-    height: $nav-bar-height;
+.title {
+  width: $nav-bar-logo-width;
+  height: $nav-bar-height;
 
-    background-color: $profile-alice-color;
-  }
+  display: flex;
+  justify-content: left;
+  align-items: center;
 
-  .profile-ketlen {
-    width: $nav-bar-profile-width;
-    height: $nav-bar-height;
+  padding-left: $nav-bar-padding;
 
-    background-color: $profile-ketlen-color;
-  }
+  font-size: $nav-bar-logo-font-size;
+  color: $text-black;
 
-  .profile-walfredo {
-    width: $nav-bar-profile-width;
-    height: $nav-bar-height;
-
-    background-color: $profile-walfredo-color;
-  }
-
-  .title {
-    width: $nav-bar-logo-width;
-    height: $nav-bar-height;
-
-    display: flex;
-    justify-content: left;
-    align-items: center;
-
-    padding-left: $nav-bar-padding;
-
-    font-size: $nav-bar-logo-font-size;
-    color: $text-black;
-
-    &:hover {
-      background-color: $options-bar-color;
-    }
+  &:hover {
+    background-color: $options-bar-color;
   }
 }
 
@@ -79,38 +58,38 @@
   display: flex;
   flex-direction: row;
   align-items: right;
+}
 
-  .language {
-    width: $nav-bar-language-width;
-    height: $nav-bar-height;
+.language {
+  width: $nav-bar-language-width;
+  height: $nav-bar-height;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    font-size: $nav-bar-font-size;
-    color: $text-black;
+  font-size: $nav-bar-font-size;
+  color: $text-black;
 
-    &:hover {
-      background-color: $options-bar-color;
-      font-weight: $nav-bar-font-weight-hover;
-    }
+  &:hover {
+    background-color: $options-bar-color;
+    font-weight: $nav-bar-font-weight-hover;
   }
+}
 
-  .about {
-    width: $nav-bar-about-width;
-    height: $nav-bar-height;
+.about {
+  width: $nav-bar-about-width;
+  height: $nav-bar-height;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    font-size: $nav-bar-font-size;
-    color: $text-black;
+  font-size: $nav-bar-font-size;
+  color: $text-black;
 
-    &:hover {
-      background-color: $options-bar-color;
-      font-weight: $nav-bar-font-weight-hover;
-    }
+  &:hover {
+    background-color: $options-bar-color;
+    font-weight: $nav-bar-font-weight-hover;
   }
 }

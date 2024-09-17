@@ -2,37 +2,23 @@
 @import '../../../styles/fonts.scss';
 @import '../../../styles/sizes.scss';
 
-.profile-alice {
-  position: relative;
-
+.profile-default {
   width: $home-profile-width;
   height: $home-profile-height;
 
+  &:hover {
+    height: $home-profile-height-hover;
+  }
+}
+
+.alice {
   background-color: $profile-alice-color;
-
-  &:hover {
-    height: $home-profile-height-hover;
-  }
 }
 
-.profile-ketlen {
-  width: $home-profile-width;
-  height: $home-profile-height;
-
+.ketlen {
   background-color: $profile-ketlen-color;
-
-  &:hover {
-    height: $home-profile-height-hover;
-  }
 }
 
-.profile-walfredo {
-  width: $home-profile-width;
-  height: $home-profile-height;
-
+.walfredo {
   background-color: $profile-walfredo-color;
-
-  &:hover {
-    height: $home-profile-height-hover;
-  }
 }
