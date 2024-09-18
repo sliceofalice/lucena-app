@@ -14,7 +14,7 @@ export class OptionsDropdownComponent {
     return this.type ? `options-dropdown-default ${this.type}` : 'options-dropdown-default';
   }
 
-  emitEvent(language: string): void {
+  emitLangugageEvent(language: string): void {
     this.languageOptionEvent.emit(language);
   }
 }
