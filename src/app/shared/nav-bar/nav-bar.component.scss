@@ -28,9 +28,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
-.title {
+.title-default {
   width: $nav-bar-logo-width;
   height: $nav-bar-height;
 
@@ -43,6 +47,13 @@
   font-size: $nav-bar-logo-font-size;
   color: $text-black;
 
+  &:hover {
+    background-color: $options-color;
+    cursor: pointer;
+  }
+}
+
+.title-clicked {
   &:hover {
     background-color: $options-color;
   }
@@ -70,6 +81,7 @@
   &:hover {
     background-color: $options-color;
     font-weight: $nav-bar-font-weight-hover;
+    cursor: pointer;
   }
 }
 
@@ -92,5 +104,6 @@
   &:hover {
     background-color: $options-color;
     font-weight: $nav-bar-font-weight-hover;
+    cursor: pointer;
   }
 }

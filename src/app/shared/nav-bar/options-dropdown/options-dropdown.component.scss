@@ -3,7 +3,17 @@
 @import '../../../../styles/sizes.scss';
 
 .options-dropdown-default {
-  background-color: $options-dropdown-color;
+  background-color: $options-color;
+}
+
+.home {
+  position: absolute;
+  top: $nav-bar-height;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .language {
@@ -16,11 +26,20 @@
   align-items: center;
 }
 
-.option {
+.option-language {
   height: $options-dropdown-option-height;
   width: $options-dropdown-language-width;
 
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+
+  padding-left: $options-dropdown-padding;
+
+  color: $text-black;
+
+  &:hover {
+    background-color: $nav-bar-color;
+    font-weight: $options-dropdown-font-weight-hover;
+  }
 }

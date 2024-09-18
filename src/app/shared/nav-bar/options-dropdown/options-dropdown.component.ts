@@ -6,15 +6,20 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrl: './options-dropdown.component.scss'
 })
 export class OptionsDropdownComponent {
-  @Input() type?: string;
+  @Input({ required : true }) type!: 'home' | 'language';
   @Output() languageOptionEvent = new EventEmitter<string>();
+  @Output() homeOptionEvent = new EventEmitter<string>();
   languages = ['English', 'Portuguese'];
 
   get typeClass() : string {
-    return this.type ? `options-dropdown-default ${this.type}` : 'options-dropdown-default';
+    return `options-dropdown-default ${this.type}`;
   }
 
-  emitLangugageEvent(language: string): void {
+  emitLanguageEvent(language: string): void {
     this.languageOptionEvent.emit(language);
+  }
+
+  emitHomeEvent(): void {
+    this.homeOptionEvent.emit('Home');
   }
 }
