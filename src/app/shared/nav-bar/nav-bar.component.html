@@ -1,7 +1,7 @@
 <div [class]="navBarType">
   <div
     class="left-nav-bar"
-    *ngIf="navBarAlternative == false">
+    *ngIf="!navBarType">
     <div class="profiles">
       <app-nav-bar-logo
         *ngFor="let profile of profiles"
@@ -15,9 +15,15 @@
   </div>
   <div class="right-nav-bar">
     <div
-      class="language poppins-light"
-      [translate]="'app.navBar.language' | translate">
-  </div>
+      [class]="languageClass"
+      [translate]="'app.navBar.language' | translate"
+      (click)="onClickLanguage()">
+    </div>
+    <app-options-dropdown
+      *ngIf="languageDropdown"
+      [type]="'language'"
+      (languageOptionEvent)="onClickLanguageOption($event)">
+    </app-options-dropdown>
     <div
       class="about poppins-light"
       [translate]="'app.navBar.about' | translate">

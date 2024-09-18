@@ -6,11 +6,18 @@ $nav-bar-height: 8vh;
 $nav-bar-padding: 3vh;
 $nav-bar-about-width: 14vh;
 $nav-bar-language-width: 18vh;
-$nav-bar-logo-width: 18vh;
-$nav-bar-profile-width: 2vh;
-$nav-bar-logo-font-size: 3vh;
 $nav-bar-font-size: 2vh;
 $nav-bar-font-weight-hover: 600;
+
+// nav-bar-logo
+$nav-bar-logo-width: 18vh;
+$nav-bar-logo-font-size: 3vh;
+$nav-bar-profile-width: 2vh;
+
+// options-dropdown
+$options-dropdown-language-width: 18vh;
+$options-dropdown-option-height: 5vh;
+$options-dropdown-font-size: 2vh;
 
 // home-page
 $home-page-title-font-size: 15vh;

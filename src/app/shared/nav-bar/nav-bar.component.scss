@@ -2,22 +2,18 @@
 @import '../../../styles/fonts.scss';
 @import '../../../styles/sizes.scss';
 
-.nav-bar-main {
+.nav-bar-default {
   width: $nav-bar-width;
   height: $nav-bar-height;
-  background-color: $nav-bar-color;
 
   display: flex;
   align-items: center;
+
+  background-color: $nav-bar-color;
 }
 
-.nav-bar-alternative {
-  width: $nav-bar-width;
-  height: $nav-bar-height;
+.alternative {
   background-color: $background-color;
-
-  display: flex;
-  align-items: center;
 }
 
 .left-nav-bar {
@@ -48,7 +44,7 @@
   color: $text-black;
 
   &:hover {
-    background-color: $options-bar-color;
+    background-color: $options-color;
   }
 }
 
@@ -60,7 +56,7 @@
   align-items: right;
 }
 
-.language {
+.language-default {
   width: $nav-bar-language-width;
   height: $nav-bar-height;
 
@@ -72,9 +68,14 @@
   color: $text-black;
 
   &:hover {
-    background-color: $options-bar-color;
+    background-color: $options-color;
     font-weight: $nav-bar-font-weight-hover;
   }
+}
+
+.language-clicked {
+  background-color: $options-color;
+  font-weight: $nav-bar-font-weight-hover;
 }
 
 .about {
@@ -89,7 +90,7 @@
   color: $text-black;
 
   &:hover {
-    background-color: $options-bar-color;
+    background-color: $options-color;
     font-weight: $nav-bar-font-weight-hover;
   }
 }

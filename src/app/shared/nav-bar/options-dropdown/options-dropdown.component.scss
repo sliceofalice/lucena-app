@@ -1,0 +1,26 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/fonts.scss';
+@import '../../../../styles/sizes.scss';
+
+.options-dropdown-default {
+  background-color: $options-dropdown-color;
+}
+
+.language {
+  position: absolute;
+  top: $nav-bar-height;
+  right: $nav-bar-about-width;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.option {
+  height: $options-dropdown-option-height;
+  width: $options-dropdown-language-width;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
