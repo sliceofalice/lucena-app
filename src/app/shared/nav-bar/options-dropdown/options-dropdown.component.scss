@@ -9,7 +9,7 @@
 .home {
   position: absolute;
   top: $nav-bar-height;
-  left: 0;
+  left: $nav-bar-logo-width;
 
   display: flex;
   flex-direction: column;
@@ -26,9 +26,27 @@
   align-items: center;
 }
 
+.option-home {
+  height: $options-dropdown-option-height;
+  width: $nav-bar-logo-width;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  padding-left: $options-dropdown-padding;
+
+  color: $text-black;
+
+  &:hover {
+    background-color: $nav-bar-color;
+    font-weight: $options-dropdown-font-weight-hover;
+  }
+}
+
 .option-language {
   height: $options-dropdown-option-height;
-  width: $options-dropdown-language-width;
+  width: $nav-bar-language-width;
 
   display: flex;
   justify-content: left;
