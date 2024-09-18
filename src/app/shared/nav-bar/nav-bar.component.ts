@@ -6,10 +6,27 @@ import { Component, Input } from '@angular/core';
   styleUrl: './nav-bar.component.scss'
 })
 export class NavBarComponent {
-  @Input() navBarAlternative: boolean = false;
+  @Input() type?: string;
+  @Input() languageClicked?: boolean;
+
   profiles = ['Alice', 'Ketlen', 'Walfredo'];
+  languageDropdown = false;
 
   get navBarType() : string {
-    return this.navBarAlternative ? 'nav-bar-alternative' : 'nav-bar-main';
+    return this.type ? `nav-bar-default ${this.type}` : 'nav-bar-default';
   }
+
+  get languageClass() : string {
+    return this.languageClicked ? 'language-default language-clicked poppins-light' : 'language-default poppins-light';
+  }
+
+  onClickLanguage() : void{
+    this.languageClicked = !this.languageClicked;
+    this.languageDropdown = !this.languageDropdown;
+  }
+
+  handleEvent(language: string) {
+    console.log(language);
+  }
+
 }

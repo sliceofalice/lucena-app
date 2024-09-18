@@ -1,0 +1,10 @@
+<div
+ [class]="typeClass">
+ <div *ngIf="type === 'language'">
+    <div
+      *ngFor="let language of languages"
+      class="option poppins-light"
+      (click)="emitEvent(language)"> {{ language }}
+    </div>
+  </div>
+</div>
