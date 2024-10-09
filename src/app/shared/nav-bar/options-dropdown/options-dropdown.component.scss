@@ -30,6 +30,8 @@
   height: $options-dropdown-option-height;
   width: $nav-bar-logo-width;
 
+  font-size: $options-dropdown-font-size;
+
   display: flex;
   justify-content: left;
   align-items: center;
@@ -47,6 +49,8 @@
 .option-language {
   height: $options-dropdown-option-height;
   width: $nav-bar-language-width;
+
+  font-size: $options-dropdown-font-size;
 
   display: flex;
   justify-content: left;
